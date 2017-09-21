@@ -1,0 +1,21 @@
+
+DefineDomainInclude:0104_Entity_Unlocking_Device
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Unlocking_Device
+        Relationship
+            Sets ->> Unlock_Step
+        State
+
+            DynamicState:Updating
+                StateAction
+                    Traverse
+                        Navigation
+                            Unlocking_Device : Sets : Unlock_Step
+                        TraverseSelection
+                            GenerateEvent
+                                Unlock_Step : Advance
+                Transition
+                    EventState
+                        Device_update -> Updating

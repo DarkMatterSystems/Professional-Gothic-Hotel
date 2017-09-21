@@ -1,0 +1,93 @@
+
+DefineDomainInclude:0106_Entity_Unlock_Step
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Unlock_Step
+        Relationship
+            Followed_by -|> Unlock_Step
+            Part_of     --> Unlocking_Sequence
+        State
+
+            |-----------
+
+            DynamicState:Wrong_Step
+                StateAction
+                    | Unlock Step out of sequence -> Reset Unlocking Sequence.
+                    Traverse
+                        Navigation
+                            Unlock_Step : Part_of  : Unlocking_Sequence
+                        TraverseSelection
+                            GenerateEvent
+                                Unlocking_Sequence : Reset
+                Transition
+                    EventState
+                        Reset -> Locked
+                    IgnoreEvent
+                        Advance
+                    CannotHappen
+                        Select
+                        Prime
+
+            |-----------
+
+            DynamicState:Locked
+                Transition
+                    EventState
+                        Select  -> Selected
+                    IgnoreEvent
+                        Advance
+                        Reset
+                    CannotHappen
+                        Prime
+
+            |-----------
+
+            DynamicState:Selected
+                Transition
+                    EventState
+                        Prime   -> Primed
+                        Advance -> Wrong_Step
+                        Reset   -> Locked
+                    CannotHappen
+                        Select
+
+            |-----------
+
+            DynamicState:Primed
+                Transition
+                    EventState
+                        Advance -> Unlocked
+                        Reset   -> Locked
+                    CannotHappen
+                        Select
+                        Prime
+
+            |-----------
+
+            DynamicState:Unlocked
+                StateAction
+                    | Determine if this is the last Unlock Step in sequence.
+                    Traverse
+                        Navigation
+                            Unlock_Step : Followed_by : Unlock_Step
+                        TraverseSelection
+                            | There are more Unlock Steps in sequence -> Prime the next Unlock Step.
+                            GenerateEvent
+                                Unlock_Step : Prime
+                        NullTraverseSelection
+                            | There are no more Unlock Steps in sequence -> Tell Unlocking Sequence
+                            | to unlock Secret Panel.
+                            Traverse
+                                Navigation
+                                    Unlock_Step : Part_of : Unlocking_Sequence
+                                TraverseSelection
+                                    GenerateEvent
+                                        Unlocking_Sequence : Complete
+                Transition
+                    EventState
+                        Advance -> Wrong_Step
+                        Reset   -> Locked
+                    CannotHappen
+                        Select
+                        Prime

@@ -1,0 +1,108 @@
+
+DefineMatrixInclude:0200_Silo_Real_World_Objects
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Silo:M0:Real_World_Objects
+        RealmObject:Objects_Of_Analysis
+            DomainObject:Gothic_Security
+
+                |-----------
+
+                EntityObject:Room_Device
+                    Object
+                        | Identity                              | State    | Name
+                        ROOM_DEVICE_101_ROOM_DOOR               : Redirect : "Door"
+                        ROOM_DEVICE_101_SECRET_PANEL            : Redirect : "Panel"
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_LIGHT  : Redirect : "Light"
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_DRAWER : Redirect : "Drawer"
+                    ObjectRelation:Contained_in:Room
+                        ROOM_DEVICE_101_ROOM_DOOR               : ROOM_101_MISS_GRANT
+                        ROOM_DEVICE_101_SECRET_PANEL            : ROOM_101_MISS_GRANT
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_LIGHT  : ROOM_101_MISS_GRANT
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_DRAWER : ROOM_101_MISS_GRANT
+                    ObjectRelation:Generalisation:Room_Door
+                        ROOM_DEVICE_101_ROOM_DOOR : ROOM_DOOR_101
+                    ObjectRelation:Generalisation:Secret_Panel
+                        ROOM_DEVICE_101_SECRET_PANEL : SECRET_PANEL_101
+                    ObjectRelation:Generalisation:Unlocking_Device
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_LIGHT  : UNLOCKING_DEVICE_101_LIGHT
+                        ROOM_DEVICE_101_UNLOCKING_DEVICE_DRAWER : UNLOCKING_DEVICE_101_DRAWER
+
+                |-----------
+
+                EntityObject:Room_Door
+                    Object
+                        | Identity    | State
+                        ROOM_DOOR_101 : Open
+                    ObjectRelation:Specialisation:Room_Device
+                        ROOM_DOOR_101 : ROOM_DEVICE_101_ROOM_DOOR
+
+                |-----------
+
+                EntityObject:Secret_Panel
+                    Object
+                        | Identity       | State
+                        SECRET_PANEL_101 : Closed
+                    ObjectRelation:Opened_by:Unlocking_Sequence
+                        SECRET_PANEL_101 : UNLOCKING_SEQUENCE_101_ID001
+                        SECRET_PANEL_101 : UNLOCKING_SEQUENCE_101_ID002
+                    ObjectRelation:Specialisation:Room_Device
+                        SECRET_PANEL_101 : ROOM_DEVICE_101_SECRET_PANEL
+
+                |-----------
+
+                EntityObject:Unlocking_Device
+                    Object
+                        | Identity                  | State
+                        UNLOCKING_DEVICE_101_LIGHT  : Updating
+                        UNLOCKING_DEVICE_101_DRAWER : Updating
+                    ObjectRelation:Sets:Unlock_Step
+                        UNLOCKING_DEVICE_101_LIGHT  : UNLOCK_STEP_101_SEQ001_LIGHT_ON
+                        UNLOCKING_DEVICE_101_LIGHT  : UNLOCK_STEP_101_SEQ002_LIGHT_ON
+                        UNLOCKING_DEVICE_101_DRAWER : UNLOCK_STEP_101_SEQ001_DRAWER_OPEN
+                        UNLOCKING_DEVICE_101_DRAWER : UNLOCK_STEP_101_SEQ002_DRAWER_OPEN
+
+                |-----------
+
+                EntityObject:Unlocking_Sequence
+                    Object
+                        | Identity                   | State
+                        UNLOCKING_SEQUENCE_101_ID001 : Idle
+                        UNLOCKING_SEQUENCE_101_ID002 : Idle
+                    ObjectRelation:Opens:Secret_Panel
+                        UNLOCKING_SEQUENCE_101_ID001 : SECRET_PANEL_101
+                        UNLOCKING_SEQUENCE_101_ID002 : SECRET_PANEL_101
+                    ObjectRelation:Starts_at:Unlock_Step
+                        UNLOCKING_SEQUENCE_101_ID001 : UNLOCK_STEP_101_SEQ001_LIGHT_ON
+                        UNLOCKING_SEQUENCE_101_ID002 : UNLOCK_STEP_101_SEQ002_DRAWER_OPEN
+
+                |-----------
+
+                EntityObject:Unlock_Step
+                    Object
+                        | Identity                         | State
+                        UNLOCK_STEP_101_SEQ001_LIGHT_ON    : Locked
+                        UNLOCK_STEP_101_SEQ001_DRAWER_OPEN : Locked
+                        UNLOCK_STEP_101_SEQ002_DRAWER_OPEN : Locked
+                        UNLOCK_STEP_101_SEQ002_LIGHT_ON    : Locked
+                    ObjectRelation:Followed_by:Unlock_Step
+                        UNLOCK_STEP_101_SEQ001_LIGHT_ON    : UNLOCK_STEP_101_SEQ001_DRAWER_OPEN
+                        UNLOCK_STEP_101_SEQ002_DRAWER_OPEN : UNLOCK_STEP_101_SEQ002_LIGHT_ON
+                    ObjectRelation:Part_of:Unlocking_Sequence
+                        UNLOCK_STEP_101_SEQ001_LIGHT_ON    : UNLOCKING_SEQUENCE_101_ID001
+                        UNLOCK_STEP_101_SEQ001_DRAWER_OPEN : UNLOCKING_SEQUENCE_101_ID001
+                        UNLOCK_STEP_101_SEQ002_DRAWER_OPEN : UNLOCKING_SEQUENCE_101_ID002
+                        UNLOCK_STEP_101_SEQ002_LIGHT_ON    : UNLOCKING_SEQUENCE_101_ID002
+
+                |-----------
+
+                EntityObject:Room
+                    Object
+                        | Identity          | Number
+                        ROOM_101_MISS_GRANT :    101
+                    ObjectRelation:Contains:Room_Device
+                        ROOM_101_MISS_GRANT : ROOM_DEVICE_101_ROOM_DOOR
+                        ROOM_101_MISS_GRANT : ROOM_DEVICE_101_SECRET_PANEL
+                        ROOM_101_MISS_GRANT : ROOM_DEVICE_101_UNLOCKING_DEVICE_LIGHT
+                        ROOM_101_MISS_GRANT : ROOM_DEVICE_101_UNLOCKING_DEVICE_DRAWER

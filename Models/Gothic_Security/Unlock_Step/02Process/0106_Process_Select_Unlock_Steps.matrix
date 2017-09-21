@@ -1,0 +1,13 @@
+
+DefineEntityProcessInclude:Unlock_Step:0106_Process_Select_Unlock_Steps
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    GenerateEvent
+        Unlock_Step : Select
+    Traverse
+        Navigation
+            Unlock_Step : Followed_by : Unlock_Step
+        TraverseSelection
+            ProcessEntityInclude
+                Unlock_Step : 0106_Process_Select_Unlock_Steps

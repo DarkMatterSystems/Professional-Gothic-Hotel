@@ -1,0 +1,84 @@
+
+DefineDomainInclude:0105_Entity_Unlocking_Sequence
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Unlocking_Sequence
+        Relationship
+            Opens     --> Secret_Panel
+            Starts_at --> Unlock_Step
+        State
+
+            |-----------
+
+            DynamicState:Idle
+                StateAction
+                    |
+                    | Reset all Unlock Steps associated with this Unlocking Sequence.
+                    |
+                    Traverse
+                        Navigation
+                            Unlocking_Sequence : Starts_at : Unlock_Step
+                        TraverseSelection
+                            ProcessEntityInclude
+                                Unlock_Step : 0106_Process_Reset_Unlock_Steps
+                Transition
+                    EventState
+                        Activate -> Active
+                    IgnoreEvent
+                        Reset
+                    CannotHappen
+                        Complete
+
+            |-----------
+
+            DynamicState:Active
+                StateAction
+                    |
+                    | Select all Unlock Steps associated with this Unlocking Sequence.
+                    |
+                    Traverse
+                        Navigation
+                            Unlocking_Sequence : Starts_at : Unlock_Step
+                        TraverseSelection
+                            ProcessEntityInclude
+                                Unlock_Step : 0106_Process_Select_Unlock_Steps
+                    |
+                    | Prime the first Unlock Step in the Unlocking Sequence. Priming
+                    | the next Unlock Step ensures that only this Unlock Step will
+                    | be accepted. Any other Unlock Step will reset the Unlocking
+                    | Sequence.
+                    |
+                    Traverse
+                        Navigation
+                            Unlocking_Sequence : Starts_at : Unlock_Step
+                        TraverseSelection
+                            GenerateEvent
+                                Unlock_Step : Prime
+                Transition
+                    EventState
+                        Reset    -> Idle
+                        Complete -> Complete
+                    CannotHappen
+                        Activate
+
+            |-----------
+
+            DynamicState:Complete
+                StateAction
+                    |
+                    | The Unlocking Sequence has sucessfuly completed so unlock the
+                    | Secret Panel.
+                    |
+                    Traverse
+                        Navigation
+                            Unlocking_Sequence : Opens : Secret_Panel
+                        TraverseSelection
+                            GenerateEvent
+                                Secret_Panel : Unlock_panel
+                Transition
+                    EventState
+                        Reset -> Idle
+                    CannotHappen
+                        Activate
+                        Complete

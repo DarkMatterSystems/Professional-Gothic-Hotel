@@ -1,0 +1,57 @@
+
+System:Prof_Gothic_Hotel
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Description
+        Paragraph:Heading
+            Professional Gothic Hotel Model
+        Paragraph:Content
+            The original Gothic Hotel description and model can be found here:
+            http://www.informit.com/articles/article.aspx?p=1592379
+
+    Type
+        BaseType
+            Integer
+                Number : 101 .. 999
+            String
+                Text : 20
+
+    Matrix:Model:Application
+        Silo:M1:Software_Application
+            Realm:Analysis_Of_Application
+                Domain:Gothic_Security
+
+                    EventContext
+                        ImportEvent
+                            |
+                            | Controls Domain
+                            |
+                            Room_Device : Device_update
+                            Room_Door   : Door_opened
+
+                    |===========================================================
+
+                    DomainInclude
+                        0101_Entity_Room_Device
+                        0102_Entity_Room_Door
+                        0103_Entity_Secret_Panel
+                        0104_Entity_Unlocking_Device
+                        0105_Entity_Unlocking_Sequence
+                        0106_Entity_Unlock_Step
+
+                    |===========================================================
+
+                    Entity:Room
+                        Attribute
+                            Number : Number
+                        Relationship
+                            Contains ->> Room_Device
+                        Identifier:Room_Identifier
+                            OwnKey
+                                Number
+
+        |=======================================================================
+
+        MatrixInclude
+            0200_Silo_Real_World_Objects

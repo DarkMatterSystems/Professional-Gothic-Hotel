@@ -1,0 +1,45 @@
+
+DefineDomainInclude:0101_Entity_Room_Device
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Room_Device
+        Attribute
+            Text : Name
+        Relationship
+            Contained_in   --> Room
+            Generalisation -|> Room_Door
+            Generalisation -|> Secret_Panel
+            Generalisation -|> Unlocking_Device
+        Identifier:Room_Device_Identifier
+            OwnKey
+                Name
+            ForeignKey
+                Contained_in : Room : Room_Identifier
+        State
+
+            |-----------
+
+            DynamicState:Redirect
+                StateAction
+                    Traverse
+                        Navigation
+                            Room_Device : Generalisation : Room_Door
+                        TraverseSelection
+                            GenerateEvent
+                                Room_Door : Door_closed
+                    Traverse
+                        Navigation
+                            Room_Device : Generalisation : Secret_Panel
+                        TraverseSelection
+                            GenerateEvent
+                                Secret_Panel : Panel_closed
+                    Traverse
+                        Navigation
+                            Room_Device : Generalisation : Unlocking_Device
+                        TraverseSelection
+                            GenerateEvent
+                                Unlocking_Device : Device_update
+                Transition
+                    EventState
+                        Device_update -> Redirect

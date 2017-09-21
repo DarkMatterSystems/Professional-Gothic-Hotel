@@ -1,0 +1,1112 @@
+﻿
+Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+
+    Matrix Model Compiler - Professional Edition - SID/ANSIC/001 - Version 2.2.1
+    Architecture Design: Simple Interleaved Design - Version 1.3.2
+    Programming Templates: ANSI C/C++ - Version 1.2.0
+    Licenced to: Mike Finn, Dark Matter Systems Ltd
+    Single User Licence - Number: BB-72-02-87 - Expiry Date: None
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+    Support: support@ultradark.com - Website: www.analysisdesignmatrix.com
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+        Development on THU-21-SEP-2017 @ 11:13:17
+
+        Model Name:
+            Prof_Gothic_Hotel
+        Matrix Model Folder:
+            M:\Matrix\Models
+        Generated Source Code:
+            M:\Matrix\Generated
+        Auxiliary Scenarios Folder:
+            M:\Matrix\Scenarios
+
+        System:Prof_Gothic_Hotel
+            Matrix:Model:Application
+                Silo:M1:Software_Application
+                    Realm:Analysis_Of_Application
+                        Domain:Gothic_Security
+                            Entity:
+                                Room_Device
+                                Room_Door
+                                Secret_Panel
+                                Unlocking_Device
+                                Unlocking_Sequence
+                                Unlock_Step
+                                Room
+
+        Model Compilation Elapsed Time: 00:00:02
+
+    Disconnected from MATRIX*CORE on THU-21-SEP-2017 @ 11:13:19
+
+
+MATRIX PASSED
+
+
+~ProfGothicHotel.0001.0001.Library.c
+~ProfGothicHotel.0003.0001.RoomDevice.DataAccess.c
+~ProfGothicHotel.0002.0001.Initialisation.c
+~ProfGothicHotel.0001.0004.Initialisation.c
+~ProfGothicHotel.0001.0005.Scheduler.c
+~ProfGothicHotel.0001.0006.LiteralStrings.c
+~ProfGothicHotel.0001.0007.Enumerations.c
+~ProfGothicHotel.0011.0003.Simulator.Stimulate.c
+~ProfGothicHotel.0003.0001.RoomDevice.EventSenders.c
+~ProfGothicHotel.0002.0004.ProcessIncludes.c
+~ProfGothicHotel.0003.0001.RoomDevice.Identifiers.c
+~ProfGothicHotel.0003.0002.RoomDoor.DataAccess.c
+~ProfGothicHotel.0003.0001.RoomDevice.Dispatcher.c
+~ProfGothicHotel.0003.0002.RoomDoor.StateActions.c
+~ProfGothicHotel.0003.0002.RoomDoor.EventSenders.c
+~ProfGothicHotel.0003.0001.RoomDevice.ProcessIncludes.c
+~ProfGothicHotel.0012.0006.Simulator.UnlockStep.EntityDisplay.c
+~ProfGothicHotel.0003.0001.RoomDevice.StateActions.c
+~ProfGothicHotel.0003.0006.UnlockStep.StateActions.c
+~ProfGothicHotel.0003.0003.SecretPanel.DataAccess.c
+Generating Code...
+Compiling...
+~ProfGothicHotel.0001.0002.ErrorHandler.c
+~ProfGothicHotel.0003.0003.SecretPanel.StateActions.c
+~ProfGothicHotel.0003.0004.UnlockingDevice.StateActions.c
+~ProfGothicHotel.0012.0001.Simulator.RoomDevice.EventDisplay.c
+~ProfGothicHotel.0011.0001.Simulator.Configuration.c
+~ProfGothicHotel.0012.0001.Simulator.RoomDevice.EntityDisplay.c
+~ProfGothicHotel.0003.0006.UnlockStep.Dispatcher.c
+~ProfGothicHotel.0011.0002.Simulator.LiteralStrings.c
+~ProfGothicHotel.0001.0003.MainProgram.c
+~ProfGothicHotel.0002.0002.Scheduler.c
+~ProfGothicHotel.0012.0006.Simulator.UnlockStep.StateDisplay.c
+~ProfGothicHotel.0003.0007.Room.DataAccess.c
+~ProfGothicHotel.0003.0006.UnlockStep.DataAccess.c
+~ProfGothicHotel.0002.0003.SchedulerInitialisation.c
+~ProfGothicHotel.0003.0002.RoomDoor.Identifiers.c
+~ProfGothicHotel.0003.0005.UnlockingSequence.ProcessIncludes.c
+~ProfGothicHotel.0012.0006.Simulator.UnlockStep.EventAcquireIdentity.c
+~ProfGothicHotel.0012.0001.Simulator.RoomDevice.EventAcquireIdentity.c
+~ProfGothicHotel.0012.0002.Simulator.RoomDoor.EventDisplay.c
+~ProfGothicHotel.0012.0001.Simulator.RoomDevice.EventAcquireIdentifier.c
+Generating Code...
+Compiling...
+~ProfGothicHotel.0003.0005.UnlockingSequence.EventSenders.c
+~ProfGothicHotel.0012.0002.Simulator.RoomDoor.EntityDisplay.c
+~ProfGothicHotel.0003.0005.UnlockingSequence.StateActions.c
+~ProfGothicHotel.0003.0003.SecretPanel.EventSenders.c
+~ProfGothicHotel.0012.0005.Simulator.UnlockingSequence.StateDisplay.c
+~ProfGothicHotel.0003.0004.UnlockingDevice.DataAccess.c
+~ProfGothicHotel.0012.0001.Simulator.RoomDevice.StateDisplay.c
+~ProfGothicHotel.0003.0004.UnlockingDevice.EventSenders.c
+~ProfGothicHotel.0003.0005.UnlockingSequence.DataAccess.c
+~ProfGothicHotel.0012.0002.Simulator.RoomDoor.EventAcquireIdentity.c
+~ProfGothicHotel.0003.0006.UnlockStep.EventSenders.c
+~ProfGothicHotel.0012.0003.Simulator.SecretPanel.EventDisplay.c
+~ProfGothicHotel.0012.0004.Simulator.UnlockingDevice.EventDisplay.c
+~ProfGothicHotel.0003.0002.RoomDoor.Dispatcher.c
+~ProfGothicHotel.0012.0005.Simulator.UnlockingSequence.EventDisplay.c
+~ProfGothicHotel.0012.0006.Simulator.UnlockStep.EventDisplay.c
+~ProfGothicHotel.0003.0002.RoomDoor.ProcessIncludes.c
+~ProfGothicHotel.0003.0003.SecretPanel.Identifiers.c
+~ProfGothicHotel.0003.0003.SecretPanel.Dispatcher.c
+~ProfGothicHotel.0003.0003.SecretPanel.ProcessIncludes.c
+Generating Code...
+Compiling...
+~ProfGothicHotel.0003.0004.UnlockingDevice.Identifiers.c
+~ProfGothicHotel.0003.0004.UnlockingDevice.Dispatcher.c
+~ProfGothicHotel.0003.0004.UnlockingDevice.ProcessIncludes.c
+~ProfGothicHotel.0003.0005.UnlockingSequence.Identifiers.c
+~ProfGothicHotel.0003.0006.UnlockStep.Identifiers.c
+~ProfGothicHotel.0003.0006.UnlockStep.ProcessIncludes.c
+~ProfGothicHotel.0003.0007.Room.Identifiers.c
+~ProfGothicHotel.0012.0002.Simulator.RoomDoor.StateDisplay.c
+~ProfGothicHotel.0012.0002.Simulator.RoomDoor.EventAcquireIdentifier.c
+~ProfGothicHotel.0012.0003.Simulator.SecretPanel.EntityDisplay.c
+~ProfGothicHotel.0012.0003.Simulator.SecretPanel.EventAcquireIdentity.c
+~ProfGothicHotel.0012.0003.Simulator.SecretPanel.StateDisplay.c
+~ProfGothicHotel.0012.0003.Simulator.SecretPanel.EventAcquireIdentifier.c
+~ProfGothicHotel.0012.0004.Simulator.UnlockingDevice.EntityDisplay.c
+~ProfGothicHotel.0012.0004.Simulator.UnlockingDevice.EventAcquireIdentity.c
+~ProfGothicHotel.0012.0004.Simulator.UnlockingDevice.StateDisplay.c
+~ProfGothicHotel.0012.0004.Simulator.UnlockingDevice.EventAcquireIdentifier.c
+~ProfGothicHotel.0012.0005.Simulator.UnlockingSequence.EntityDisplay.c
+~ProfGothicHotel.0012.0005.Simulator.UnlockingSequence.EventAcquireIdentity.c
+~ProfGothicHotel.0012.0005.Simulator.UnlockingSequence.EventAcquireIdentifier.c
+Generating Code...
+Compiling...
+~ProfGothicHotel.0012.0006.Simulator.UnlockStep.EventAcquireIdentifier.c
+~ProfGothicHotel.0012.0007.Simulator.Room.EntityDisplay.c
+~ProfGothicHotel.0003.0005.UnlockingSequence.Dispatcher.c
+Generating Code...
+
+
+COMPILE PASSED
+
+
+    Matrix Model Simulator - Learning Edition - Version 2.0.0
+    Development on THU-21-SEP-2017 @ 11:13:23
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+$
+$ | Professional Gothic Hotel Scenario
+$
+$ trace all on
+$ trace display on
+$ trace events on
+$ trace states on
+$
+$ initialise all
+$
+$ display all
+
+Room_Device:
+    Identity  Status    Name
+    ~~~~~~~~  ~~~~~~~~  ~~~~~~~~
+           1  Redirect  "Door"
+           2  Redirect  "Panel"
+           3  Redirect  "Light"
+           4  Redirect  "Drawer"
+
+Room_Door:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Open
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Closed
+
+Unlocking_Device:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Updating
+           2  Updating
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+Room:
+    Identity  Number
+    ~~~~~~~~  ~~~~~~
+           1     101
+
+$
+$
+$ |     Event Code  Description          Command Code  Description
+$ |     ~~~~~~~~~~  ~~~~~~~~~~~~~        ~~~~~~~~~~~~  ~~~~~~~~~~~~
+$ |           D1CL  Door Closed                  D1LK  Lock Door
+$ |           L1ON  Light On                     D1UL  Unlock Door
+$ |           D2OP  Drawer Opened                PNLK  Lock Panel
+$ |           PNCL  Panel Closed                 PNUL  Unlock Panel
+$ |           D1OP  Door Opened
+$
+$
+$ | Normal Unlocking Scenarios
+$ | ##########################
+$
+$ | Normal Unlocking Via Light Then Drawer
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Device[1] Device_update ()
+
+    STATE (2:23:26) - Room_Device[1] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:30:33) - Room_Door[1] Door_closed ()
+
+    STATE (3:44:26) - Room_Door[1] Closed {Door_closed -> Open} ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[1] Activate ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[2] Activate ()
+
+    STATE (6:35:26) - Unlocking_Sequence[1] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[1] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[2] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[1] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[1] Selected {Select -> Locked} ()
+
+    STATE (6:35:26) - Unlocking_Sequence[2] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[3] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[4] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[3] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[2] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[1] Primed {Prime -> Selected} ()
+
+    STATE (9:46:26) - Unlock_Step[3] Selected {Select -> Locked} ()
+
+    STATE (9:46:26) - Unlock_Step[4] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[3] Primed {Prime -> Selected} ()
+
+$
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Active
+           2  Active
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Primed
+           2  Selected
+           3  Primed
+           4  Selected
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+
+EVENT (0:0:0) - Room_Device[3] Device_update ()
+
+    STATE (2:23:26) - Room_Device[3] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[1] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[1] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[1] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[4] Advance ()
+
+    STATE (9:68:26) - Unlock_Step[1] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:77:33) - Unlock_Step[2] Prime ()
+
+    STATE (9:14:26) - Unlock_Step[4] Wrong_Step {Advance -> Selected} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[2] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[2] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[3] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[4] Reset ()
+
+    STATE (9:57:26) - Unlock_Step[2] Primed {Prime -> Selected} ()
+
+    STATE (9:34:26) - Unlock_Step[3] Locked {Reset -> Primed} ()
+
+    STATE (9:34:26) - Unlock_Step[4] Locked {Reset -> Wrong_Step} ()
+
+$
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Active
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Unlocked
+           2  Primed
+           3  Locked
+           4  Locked
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Drawer" 101
+
+EVENT (0:0:0) - Room_Device[4] Device_update ()
+
+    STATE (2:23:26) - Room_Device[4] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[2] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[2] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[2] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[3] Advance ()
+
+    STATE (9:68:26) - Unlock_Step[2] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:86:41) - Unlocking_Sequence[1] Complete ()
+
+    STATE (6:67:26) - Unlocking_Sequence[1] Complete {Complete -> Active} ()
+
+        EVENT (6:78:33) - Secret_Panel[1] Unlock_panel ()
+
+    STATE (4:49:26) - Secret_Panel[1] Opened {Unlock_panel -> Closed} ()
+
+        EVENT => Machinery::Actuator:Unlock_panel
+
+        EVENT (4:69:41) - Room_Door[1] Lock_door ()
+
+    STATE (3:72:26) - Room_Door[1] Locked {Lock_door -> Closed} ()
+
+        EVENT => Machinery::Actuator:Lock_door
+
+$
+$ display entity Gothic_Security Room_Door
+
+Room_Door:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Complete
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Unlocked
+           2  Unlocked
+           3  Locked
+           4  Locked
+
+$ display entity Gothic_Security Secret_Panel
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Opened
+
+$
+$ | Panel Closed [PNCL - Panel Closed] The only way to unlock the Room Door after
+$ | the Unlocking Sequence has been completed is to open and close the Secret
+$ | Panel.
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Panel" 101
+
+EVENT (0:0:0) - Room_Device[2] Device_update ()
+
+    STATE (2:23:26) - Room_Device[2] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:36:33) - Secret_Panel[1] Panel_closed ()
+
+    STATE (4:14:26) - Secret_Panel[1] Closed {Panel_closed -> Opened} ()
+
+        EVENT (4:21:33) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (4:21:33) - Unlocking_Sequence[2] Reset ()
+
+        EVENT (4:33:41) - Room_Door[1] Unlock_door ()
+
+        EVENT => Machinery::Actuator:Lock_panel
+
+    STATE (6:14:26) - Unlocking_Sequence[1] Idle {Reset -> Complete} ()
+
+        EVENT (7:7:9) - Unlock_Step[1] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[2] Reset ()
+
+    STATE (9:34:26) - Unlock_Step[1] Locked {Reset -> Unlocked} ()
+
+    STATE (3:91:26) - Room_Door[1] Unlocked {Unlock_door -> Locked} ()
+
+        EVENT => Machinery::Actuator:Unlock_door
+
+    STATE (9:34:26) - Unlock_Step[2] Locked {Reset -> Unlocked} ()
+
+$
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Gothic_Security Room_Door Door_opened Room_Door_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Door[1] Door_opened ()
+
+    STATE (3:16:26) - Room_Door[1] Open {Door_opened -> Unlocked} ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[2] Reset ()
+
+$
+$ display entity Gothic_Security Room_Door
+
+Room_Door:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Open
+
+$ display entity Gothic_Security Secret_Panel
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Closed
+
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+$
+$
+$ | Normal Unlocking Via Drawer Then Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Device[1] Device_update ()
+
+    STATE (2:23:26) - Room_Device[1] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:30:33) - Room_Door[1] Door_closed ()
+
+    STATE (3:44:26) - Room_Door[1] Closed {Door_closed -> Open} ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[1] Activate ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[2] Activate ()
+
+    STATE (6:35:26) - Unlocking_Sequence[1] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[1] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[2] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[1] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[1] Selected {Select -> Locked} ()
+
+    STATE (6:35:26) - Unlocking_Sequence[2] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[3] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[4] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[3] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[2] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[1] Primed {Prime -> Selected} ()
+
+    STATE (9:46:26) - Unlock_Step[3] Selected {Select -> Locked} ()
+
+    STATE (9:46:26) - Unlock_Step[4] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[3] Primed {Prime -> Selected} ()
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Drawer" 101
+
+EVENT (0:0:0) - Room_Device[4] Device_update ()
+
+    STATE (2:23:26) - Room_Device[4] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[2] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[2] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[2] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[3] Advance ()
+
+    STATE (9:14:26) - Unlock_Step[2] Wrong_Step {Advance -> Selected} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[1] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[1] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[1] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[2] Reset ()
+
+    STATE (9:68:26) - Unlock_Step[3] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:77:33) - Unlock_Step[4] Prime ()
+
+    STATE (9:34:26) - Unlock_Step[1] Locked {Reset -> Primed} ()
+
+    STATE (9:34:26) - Unlock_Step[2] Locked {Reset -> Wrong_Step} ()
+
+    STATE (9:57:26) - Unlock_Step[4] Primed {Prime -> Selected} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+
+EVENT (0:0:0) - Room_Device[3] Device_update ()
+
+    STATE (2:23:26) - Room_Device[3] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[1] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[1] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[1] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[4] Advance ()
+
+    STATE (9:68:26) - Unlock_Step[4] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:86:41) - Unlocking_Sequence[2] Complete ()
+
+    STATE (6:67:26) - Unlocking_Sequence[2] Complete {Complete -> Active} ()
+
+        EVENT (6:78:33) - Secret_Panel[1] Unlock_panel ()
+
+    STATE (4:49:26) - Secret_Panel[1] Opened {Unlock_panel -> Closed} ()
+
+        EVENT => Machinery::Actuator:Unlock_panel
+
+        EVENT (4:69:41) - Room_Door[1] Lock_door ()
+
+    STATE (3:72:26) - Room_Door[1] Locked {Lock_door -> Closed} ()
+
+        EVENT => Machinery::Actuator:Lock_door
+
+$
+$ display entity Gothic_Security Secret_Panel
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Opened
+
+$
+$ | Drawer Opens In Error - Ignore event. Still Need Door Locked And Panel
+$ | Unlocked [D2OP - Drawer Opened]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Drawer" 101
+
+EVENT (0:0:0) - Room_Device[4] Device_update ()
+
+    STATE (2:23:26) - Room_Device[4] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[2] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[2] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[2] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[3] Advance ()
+
+    STATE (9:14:26) - Unlock_Step[3] Wrong_Step {Advance -> Unlocked} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[2] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[2] Idle {Reset -> Complete} ()
+
+        EVENT (7:7:9) - Unlock_Step[3] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[4] Reset ()
+
+    STATE (9:34:26) - Unlock_Step[3] Locked {Reset -> Wrong_Step} ()
+
+    STATE (9:34:26) - Unlock_Step[4] Locked {Reset -> Unlocked} ()
+
+$
+$ | Panel Closed [PNCL - Panel Closed]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Panel" 101
+
+EVENT (0:0:0) - Room_Device[2] Device_update ()
+
+    STATE (2:23:26) - Room_Device[2] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:36:33) - Secret_Panel[1] Panel_closed ()
+
+    STATE (4:14:26) - Secret_Panel[1] Closed {Panel_closed -> Opened} ()
+
+        EVENT (4:21:33) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (4:21:33) - Unlocking_Sequence[2] Reset ()
+
+        EVENT (4:33:41) - Room_Door[1] Unlock_door ()
+
+        EVENT => Machinery::Actuator:Lock_panel
+
+    STATE (3:91:26) - Room_Door[1] Unlocked {Unlock_door -> Locked} ()
+
+        EVENT => Machinery::Actuator:Unlock_door
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Gothic_Security Room_Door Door_opened Room_Door_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Door[1] Door_opened ()
+
+    STATE (3:16:26) - Room_Door[1] Open {Door_opened -> Unlocked} ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[2] Reset ()
+
+$
+$
+$ | Aborted Unlocking Scenarios
+$ | ###########################
+$
+$ | Aborted Unlocking Via Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Device[1] Device_update ()
+
+    STATE (2:23:26) - Room_Device[1] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:30:33) - Room_Door[1] Door_closed ()
+
+    STATE (3:44:26) - Room_Door[1] Closed {Door_closed -> Open} ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[1] Activate ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[2] Activate ()
+
+    STATE (6:35:26) - Unlocking_Sequence[1] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[1] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[2] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[1] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[1] Selected {Select -> Locked} ()
+
+    STATE (6:35:26) - Unlocking_Sequence[2] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[3] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[4] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[3] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[2] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[1] Primed {Prime -> Selected} ()
+
+    STATE (9:46:26) - Unlock_Step[3] Selected {Select -> Locked} ()
+
+    STATE (9:46:26) - Unlock_Step[4] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[3] Primed {Prime -> Selected} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+
+EVENT (0:0:0) - Room_Device[3] Device_update ()
+
+    STATE (2:23:26) - Room_Device[3] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[1] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[1] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[1] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[4] Advance ()
+
+    STATE (9:68:26) - Unlock_Step[1] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:77:33) - Unlock_Step[2] Prime ()
+
+    STATE (9:14:26) - Unlock_Step[4] Wrong_Step {Advance -> Selected} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[2] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[2] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[3] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[4] Reset ()
+
+    STATE (9:57:26) - Unlock_Step[2] Primed {Prime -> Selected} ()
+
+    STATE (9:34:26) - Unlock_Step[3] Locked {Reset -> Primed} ()
+
+    STATE (9:34:26) - Unlock_Step[4] Locked {Reset -> Wrong_Step} ()
+
+$
+$ | Light Switched On Again - Wrong Step [L1ON - Light On]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+
+EVENT (0:0:0) - Room_Device[3] Device_update ()
+
+    STATE (2:23:26) - Room_Device[3] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[1] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[1] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[1] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[4] Advance ()
+
+    STATE (9:14:26) - Unlock_Step[1] Wrong_Step {Advance -> Unlocked} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[1] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[1] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[1] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[2] Reset ()
+
+    STATE (9:34:26) - Unlock_Step[1] Locked {Reset -> Wrong_Step} ()
+
+    STATE (9:34:26) - Unlock_Step[2] Locked {Reset -> Primed} ()
+
+$
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+$
+$ | Drawer Opens - Try Anyway [D2OP - Drawer Opened]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Drawer" 101
+
+EVENT (0:0:0) - Room_Device[4] Device_update ()
+
+    STATE (2:23:26) - Room_Device[4] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[2] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[2] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[2] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[3] Advance ()
+
+$
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+$
+$ | Door Opens - Resets All When Panel Closed - Never Locked [D1OP - Door Opened]
+$ create event identifier Gothic_Security Room_Door Door_opened Room_Door_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Door[1] Door_opened ()
+
+    STATE (3:16:26) - Room_Door[1] Open {Door_opened -> Closed} ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[2] Reset ()
+
+$
+$
+$ | Aborted Unlocking Via Door Opens
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Device[1] Device_update ()
+
+    STATE (2:23:26) - Room_Device[1] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:30:33) - Room_Door[1] Door_closed ()
+
+    STATE (3:44:26) - Room_Door[1] Closed {Door_closed -> Open} ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[1] Activate ()
+
+        EVENT (3:61:41) - Unlocking_Sequence[2] Activate ()
+
+    STATE (6:35:26) - Unlocking_Sequence[1] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[1] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[2] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[1] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[1] Selected {Select -> Locked} ()
+
+    STATE (6:35:26) - Unlocking_Sequence[2] Active {Activate -> Idle} ()
+
+        EVENT (8:7:9) - Unlock_Step[3] Select ()
+
+        EVENT (8:7:9) - Unlock_Step[4] Select ()
+
+        EVENT (6:57:33) - Unlock_Step[3] Prime ()
+
+    STATE (9:46:26) - Unlock_Step[2] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[1] Primed {Prime -> Selected} ()
+
+    STATE (9:46:26) - Unlock_Step[3] Selected {Select -> Locked} ()
+
+    STATE (9:46:26) - Unlock_Step[4] Selected {Select -> Locked} ()
+
+    STATE (9:57:26) - Unlock_Step[3] Primed {Prime -> Selected} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+
+EVENT (0:0:0) - Room_Device[3] Device_update ()
+
+    STATE (2:23:26) - Room_Device[3] Redirect {Device_update -> Redirect} ()
+
+        EVENT (2:42:33) - Unlocking_Device[1] Device_update ()
+
+    STATE (5:11:26) - Unlocking_Device[1] Updating {Device_update -> Updating} ()
+
+        EVENT (5:18:33) - Unlock_Step[1] Advance ()
+
+        EVENT (5:18:33) - Unlock_Step[4] Advance ()
+
+    STATE (9:68:26) - Unlock_Step[1] Unlocked {Advance -> Primed} ()
+
+        EVENT (9:77:33) - Unlock_Step[2] Prime ()
+
+    STATE (9:14:26) - Unlock_Step[4] Wrong_Step {Advance -> Selected} ()
+
+        EVENT (9:22:33) - Unlocking_Sequence[2] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[2] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[3] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[4] Reset ()
+
+    STATE (9:57:26) - Unlock_Step[2] Primed {Prime -> Selected} ()
+
+    STATE (9:34:26) - Unlock_Step[3] Locked {Reset -> Primed} ()
+
+    STATE (9:34:26) - Unlock_Step[4] Locked {Reset -> Wrong_Step} ()
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Gothic_Security Room_Door Door_opened Room_Door_Identifier "Door" 101
+
+EVENT (0:0:0) - Room_Door[1] Door_opened ()
+
+    STATE (3:16:26) - Room_Door[1] Open {Door_opened -> Closed} ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[1] Reset ()
+
+        EVENT (3:33:41) - Unlocking_Sequence[2] Reset ()
+
+    STATE (6:14:26) - Unlocking_Sequence[1] Idle {Reset -> Active} ()
+
+        EVENT (7:7:9) - Unlock_Step[1] Reset ()
+
+        EVENT (7:7:9) - Unlock_Step[2] Reset ()
+
+    STATE (9:34:26) - Unlock_Step[1] Locked {Reset -> Unlocked} ()
+
+    STATE (9:34:26) - Unlock_Step[2] Locked {Reset -> Primed} ()
+
+$
+$ display entity Gothic_Security Room_Door
+
+Room_Door:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Open
+
+$ display entity Gothic_Security Secret_Panel
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Closed
+
+$ display entity Gothic_Security Unlocking_Sequence
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+$ display entity Gothic_Security Unlock_Step
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+$
+$
+$ | Cannot Happen Scenarios
+$ | #######################
+$
+$ | Unexpectedly Close Panel
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed] The Secret Panel can only close after
+$ | being unlocked. It can only be unlocked after a valid Unlocking Sequence has
+$ | been entered.
+$ | create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+$
+$ | display entity Gothic_Security Secret_Panel
+$
+$ | Panel Closed [PNCL - Panel Closed] Physically impossible. Event should be
+$ | impossible to receive after the last. Suspect Secret Panel Sensor failure.
+$ | create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Panel" 101
+$
+$
+$ | Unexpectedly Open Door
+$ | ~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ | create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Door" 101
+$
+$ | Light Switched On [L1ON - Light On]
+$ | create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Light" 101
+$
+$ | Drawer Opens [D2OP - Drawer Opened] The Door locks.
+$ | create event identifier Gothic_Security Room_Device Device_update Room_Device_Identifier "Drawer" 101
+$
+$ | display entity Gothic_Security Room_Door
+$
+$ | Door Opens [D1OP - Door Opened] Physically impossible. Event should be
+$ | impossible to receive after the last. Door is still locked. Suspect Drawer
+$ | Sensor failure.
+$ | create event identifier Gothic_Security Room_Door Door_opened Room_Door_Identifier "Door" 101
+$
+$
+$ display all
+
+Room_Device:
+    Identity  Status    Name
+    ~~~~~~~~  ~~~~~~~~  ~~~~~~~~
+           1  Redirect  "Door"
+           2  Redirect  "Panel"
+           3  Redirect  "Light"
+           4  Redirect  "Drawer"
+
+Room_Door:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Open
+
+Secret_Panel:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Closed
+
+Unlocking_Device:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~
+           1  Updating
+           2  Updating
+
+Unlocking_Sequence:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Idle
+           2  Idle
+
+Unlock_Step:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~
+           1  Locked
+           2  Locked
+           3  Locked
+           4  Locked
+
+Room:
+    Identity  Number
+    ~~~~~~~~  ~~~~~~
+           1     101
+
+$
+$ host pause
+$
+$ exit
+
+        Model Simulation Elapsed Time: 00:00:01
+
+    Disconnected from MATRIX*CORE on THU-21-SEP-2017 @ 11:13:24
+
+
+
+TEST PASSED
+
+
+
+
+Tool completed successfully

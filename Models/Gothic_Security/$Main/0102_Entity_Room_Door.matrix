@@ -1,0 +1,106 @@
+
+DefineDomainInclude:0102_Entity_Room_Door
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Room_Door
+        Relationship
+            Specialisation --> Room_Device
+        Identifier:Room_Door_Identifier
+            ForeignKey
+                Specialisation : Room_Device : Room_Device_Identifier
+        State
+
+            |-----------
+
+            DynamicState:Open
+                StateAction
+                    |
+                    | Reset all panel Unlocking Sequences associated with this Door.
+                    |
+                    Traverse
+                        Navigation
+                            Room_Door    : Specialisation : Room_Device
+                            Room_Device  : Contained_in   : Room
+                        TraverseSelection
+                            Traverse
+                                Navigation
+                                    Room         : Contains       : Room_Device
+                                    Room_Device  : Generalisation : Secret_Panel
+                                    Secret_Panel : Opened_by      : Unlocking_Sequence
+                                TraverseSelection
+                                    GenerateEvent
+                                        Unlocking_Sequence : Reset
+                Transition
+                    EventState
+                        Door_closed -> Closed
+                    CannotHappen
+                        Door_opened
+                        Lock_door
+                        Unlock_door
+
+            |-----------
+
+            DynamicState:Closed
+                StateAction
+                    |
+                    | Activate all panel Unlocking Sequences associated with this Door.
+                    |
+                    Traverse
+                        Navigation
+                            Room_Door    : Specialisation : Room_Device
+                            Room_Device  : Contained_in   : Room
+                        TraverseSelection
+                            Traverse
+                                Navigation
+                                    Room         : Contains       : Room_Device
+                                    Room_Device  : Generalisation : Secret_Panel
+                                    Secret_Panel : Opened_by      : Unlocking_Sequence
+                                TraverseSelection
+                                    GenerateEvent
+                                        Unlocking_Sequence : Activate
+                Transition
+                    EventState
+                        Door_opened -> Open
+                        Lock_door   -> Locked
+                    CannotHappen
+                        Door_closed
+                        Unlock_door
+
+            |-----------
+
+            DynamicState:Locked
+                StateAction
+                    Template
+                        <<TabIn>>
+                        <<TabIn>>
+                        <<:>>EVENT => Machinery::Actuator:Lock_door
+                        <<:>>
+                        <<TabOut>>
+                        <<TabOut>>
+                Transition
+                    EventState
+                        Unlock_door -> Unlocked
+                    CannotHappen
+                        Door_opened
+                        Door_closed
+                        Lock_door
+
+            |-----------
+
+            DynamicState:Unlocked
+                StateAction
+                    Template
+                        <<TabIn>>
+                        <<TabIn>>
+                        <<:>>EVENT => Machinery::Actuator:Unlock_door
+                        <<:>>
+                        <<TabOut>>
+                        <<TabOut>>
+                Transition
+                    EventState
+                        Door_opened -> Open
+                    CannotHappen
+                        Door_closed
+                        Lock_door
+                        Unlock_door

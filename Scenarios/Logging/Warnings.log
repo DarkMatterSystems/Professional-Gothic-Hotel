@@ -1,0 +1,9 @@
+
+*** WARNING: ==> Identifier is never used: "Room_Door_Identifier"
+*** 9:20:"M:\Matrix\Models\Prof_Gothic_Hotel\Gothic_Security\$Main\0102_Entity_Room_Door.matrix"
+
+*** WARNING: ==> Navigated entity not used: "Unlock_Step"
+*** 10:41:"M:\Matrix\Models\Prof_Gothic_Hotel\Gothic_Security\Unlock_Step\02Process\0106_Process_Reset_Unlock_Steps.matrix"
+
+*** WARNING: ==> Navigated entity not used: "Unlock_Step"
+*** 10:41:"M:\Matrix\Models\Prof_Gothic_Hotel\Gothic_Security\Unlock_Step\02Process\0106_Process_Select_Unlock_Steps.matrix"
